@@ -6,7 +6,7 @@
 [![NPM downloads](https://img.shields.io/npm/dm/@starefossen/express-cors.svg "NPM downloads")](https://www.npmjs.com/package/@starefossen/express-cors)
 [![NPM version](https://img.shields.io/npm/v/@starefossen/express-cors.svg "NPM version")](https://www.npmjs.com/package/@starefossen/express-cors)
 [![Node version](https://img.shields.io/node/v/@starefossen/express-cors.svg "Node version")](https://www.npmjs.com/package/@starefossen/express-cors)
-[![Dependency status](https://img.shields.io/david/Starefossen/node-@starefossen/express-cors.svg "Dependency status")](https://david-dm.org/Starefossen/node-express-cors)
+[![Dependency status](https://img.shields.io/david/Starefossen/node-express-cors.svg "Dependency status")](https://david-dm.org/Starefossen/node-express-cors)
 
 Smart CORS headers middleware for your Express.js applications.
 
