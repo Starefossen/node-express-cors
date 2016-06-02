@@ -10,11 +10,6 @@
 
 Smart CORS headers middleware for your Express.js applications.
 
-## Requirements
-
-* Node.js v4+
-* Express.js v4+
-
 ## Install
 
 ```
