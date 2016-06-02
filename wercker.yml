@@ -31,7 +31,7 @@ build:
     - turistforeningen/slack-notifier:
         url: $SLACK_WEBHOOK_URL
 
-deploy:
+npm:
   steps:
     # Rebuild node_modules to fix broken symlinks
     # https://github.com/wercker/docs/issues/310
