@@ -4,7 +4,6 @@
 [![Codacy grade](https://img.shields.io/codacy/grade/2a40f5c2df884985872e4d0a0c9ce60b.svg "Codacy")](https://www.codacy.com/app/starefossen/node-express-cors)
 [![Codacy coverage](https://img.shields.io/codacy/coverage/2a40f5c2df884985872e4d0a0c9ce60b.svg "Codacy")](https://www.codacy.com/app/starefossen/node-express-cors)
 [![NPM downloads](https://img.shields.io/npm/dm/@starefossen/express-cors.svg "NPM downloads")](https://www.npmjs.com/package/@starefossen/express-cors)
-[![NPM downloads](https://img.shields.io/npm/dm/@starefossen/express-cors.svg "NPM downloads")](https://www.npmjs.com/package/@starefossen/express-cors)
 [![NPM version](https://img.shields.io/npm/v/@starefossen/express-cors.svg "NPM version")](https://www.npmjs.com/package/@starefossen/express-cors)
 [![Node version](https://img.shields.io/node/v/@starefossen/express-cors.svg "Node version")](https://www.npmjs.com/package/@starefossen/express-cors)
 [![Dependency status](https://img.shields.io/david/Starefossen/node-@starefossen/express-cors.svg "Dependency status")](https://david-dm.org/Starefossen/node-@starefossen/express-cors)
