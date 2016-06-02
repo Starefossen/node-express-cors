@@ -37,7 +37,7 @@ The simple configuration is controlled by environment variables:
 | `CORS_MAX_AGE` | max-age header (integer) | `0` |
 | `CORS_REQUIRE_ORIGIN` | require origin header from client (boolean) | `false` |
 
-```
+```js
 const cors = require('@starefossen/express-cors');
 
 app.use(cors.middleware);
@@ -48,7 +48,7 @@ app.use(cors.middleware);
 The advanced configuration takes in a configuration object. All values defaults
 to their environment conunterpart as statated in the simple configuration.
 
-```
+```js
 const cors = require('@starefossen/express-cors');
 
 app.use(cors({
