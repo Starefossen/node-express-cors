@@ -41,7 +41,7 @@
     "@starefossen/http-error": "^1.0.0"
   },
   "peerDependencies": {
-    "express": "^4.0.0"
+    "express": "^4.14.0"
   },
   "devDependencies": {
     "codacy-coverage": "^1.1.3",
