@@ -63,4 +63,13 @@ app.use(cors({
 });
 ```
 
+### Localhost
+
+If you want to allow local development domains like `localhost` or `file://` you
+can add the following to your `CORS_ALLOW_HEADERS` environment variable:
+
+```
+CORS_ALLOW_HEADERS='localhost,null'
+```
+
 ## [MIT Licensed](https://github.com/Starefossen/node-express-cors/blob/master/LICENSE)

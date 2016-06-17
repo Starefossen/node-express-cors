@@ -7,10 +7,16 @@ const ALLOW_CREDENTIALS = process.env.CORS_ALLOW_CREDENTIALS;
 const ALLOW_HEADERS = process.env.CORS_ALLOW_HEADERS || 'Content-Type';
 const ALLOW_METHODS = process.env.CORS_ALLOW_METHODS || 'GET, OPTIONS';
 const ALLOW_ORIGINS = new Set(
-    (process.env.CORS_ALLOW_ORIGINS || '').split(',').filter(s => s !== '')
+    (process.env.CORS_ALLOW_ORIGINS || '')
+      .split(',')
+      .filter(s => s !== '')
+      .map(s => (s === 'null' ? null : s))
 );
 const DENY_ORIGINS = new Set(
-    (process.env.CORS_DENY_ORIGINS || '').split(',').filter(s => s !== '')
+    (process.env.CORS_DENY_ORIGINS || '')
+      .split(',')
+      .filter(s => s !== '')
+      .map(s => (s === 'null' ? null : s))
 );
 const EXPOSE_HEADERS = process.env.CORS_EXPOSE_HEADERS || '';
 const MAX_AGE = parseInt(process.env.CORS_MAX_AGE, 10) || 0;
@@ -36,7 +42,6 @@ module.exports = (opts => {
       || (denyOrigins.size && denyOrigins.has(origin.hostname))) {
         return next(new HttpError(`Bad Origin "${originRaw}"`, 403));
       }
-
 
       res.set('Access-Control-Allow-Headers', allowHeaders);
       res.set('Access-Control-Allow-Max-Age', maxAge);

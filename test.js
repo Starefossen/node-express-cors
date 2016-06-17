@@ -1,6 +1,6 @@
 'use strict';
 
-process.env.CORS_ALLOW_ORIGINS = 'foo.com,bar.com';
+process.env.CORS_ALLOW_ORIGINS = 'foo.com,bar.com,null';
 
 const assert = require('assert');
 const request = require('supertest');
@@ -34,6 +34,18 @@ describe('examples', () => {
         .expect('Access-Control-Allow-Max-Age', '0')
         .expect('Access-Control-Allow-Methods', 'GET, OPTIONS')
         .expect('Access-Control-Allow-Origin', 'https://foo.com')
+        .expect('Access-Control-Expose-Headers', '', done);
+    });
+
+    it('returns cors headers for null cors origin', done => {
+      simpleApp.get('/')
+        .set('Origin', 'null')
+        .expect(200)
+        .expect('Hello World')
+        .expect('Access-Control-Allow-Headers', 'Content-Type')
+        .expect('Access-Control-Allow-Max-Age', '0')
+        .expect('Access-Control-Allow-Methods', 'GET, OPTIONS')
+        .expect('Access-Control-Allow-Origin', 'null')
         .expect('Access-Control-Expose-Headers', '', done);
     });
   });
