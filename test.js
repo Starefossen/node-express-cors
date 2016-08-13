@@ -1,3 +1,4 @@
+/* eslint import/no-extraneous-dependencies: [error, { devDependencies: true }] */
 'use strict';
 
 process.env.CORS_ALLOW_ORIGINS = 'foo.com,bar.com,null';
